@@ -1,0 +1,21 @@
+﻿<Window x:Class="Juste_Prix.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Juste_Prix"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="308" Width="806" Background="{x:Null}" ResizeMode="NoResize">
+    <Grid Background="#FF156828">
+        <StackPanel Margin="10,10,10,10" Background="#FF128537">
+            <Label FontFamily="Calibri" FontSize="18" Content="Bienvenue sur le célèbre jeu du juste prix, tu dois deviner le prix auquel je pense, il se situe entre 1 et 100" HorizontalAlignment="Center"/>
+            <TextBlock x:Name="txtBlockTry" FontFamily="Calibri" Margin="50,0,0,0"/>
+            <TextBlock x:Name="txtBlockSeconds" FontFamily="Calibri" Margin="50,0,0,0"/>
+            <TextBlock x:Name="txtBlockInfo" FontFamily="Calibri" Margin="0,0,0,0" HorizontalAlignment="Center"/>
+            <TextBox x:Name="txtBoxInput" FontFamily="Calibri" Width="50" Height="20" HorizontalAlignment="Center" Margin="0,0,0,20" TextAlignment="Center" VerticalAlignment="Center" />
+            <Button x:Name="btnValidate" Width="120" Height="50" FontFamily="Calibri" Click="btnValidate_Click" Content="Valider" FontSize="18" Margin="0,0,0,10" />
+            <Button x:Name="btnNewGame" Width="120" Height="50" FontFamily="Calibri" Click="btnNewGame_Click" Content="Nouvelle Partie" FontSize="18"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
